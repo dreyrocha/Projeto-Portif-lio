@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoDrey {
+    width: 100px;
+}
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
