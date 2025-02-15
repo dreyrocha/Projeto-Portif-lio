@@ -1,7 +1,108 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #33332D;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  /* background-color: rgb(163, 8, 8); */
+  display: flex;
+  height: 20vh;
+}
+
+.interface {
+  /* margin: 0px 100px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  /* background-color: beige; */
+}
+
+header .interface {
+  align-items: center;
+  height: 100%;
+}
+
+.initnav {
+  width: 280px;
+  height: 130px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-family: "Gobold";
+}
+.initnav logo {
+  /* background-color: brown; */
+  width: 140px;
+  text-align: center;
+  justify-content: center;
+}
+
+.initnav logo a {
+  text-decoration: none;
+  font-family: "Gobold";
+  color: #295088;
+}
+.initnav logo span {
+  font-size: 70px;
+}
+
+.divisao {
+  background-color: black;
+  width: 1px;
+  height: 30px;
+}
+
+.navEnd button {
+  background-color: blueviolet;
+  width: 100px;
+  height: 50px;
+}
+.effect {
+  transition: transform 0.2s ease-in-out;
+}
+
+.effect:hover {
+  transform: rotate(8deg);
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Gobold";
+  src: url("/fonts/Gobold\ Uplow.otf") format("opentype");
+}
+
+/* main */
+main {
+  display: flex;
+  height: 80vh;
+  /* background-color: wheat; */
+}
+
+.interface article {
+    /* background-color: brown; */
+    margin: 100px;
+}
+.interface article h1,
+h2 {
+  font-family: "poppins";
+}
+
+.interface article h1 {
+  /* margin: 15px; testar dps */
+  font-size: 60px;
+  line-height: 49px;
+  color: #295088;
+}
+
+.interface article h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 60px 0px;
+    line-height: 45px;
+}
+.interface aside img {
+  width: 600px;
+}
