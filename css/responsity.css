@@ -1,34 +1,34 @@
-@media (max-width:679px) {
-       .interface article {
-        margin: 50px;
-    }
-
+@media (max-width: 679px) {
+  .interface article {
+    margin: 50px;
+  }
 }
 
 @media (max-width: 1200px) {
-    main .interface  {
-       display: inline;
-       justify-content: center;
-       text-align: center;
-    }
-    .interface aside img {
-        display: none;
-    }
-    
-    .interface aside .botao  {
-        position: relative;
-        margin: 0;
-        margin-top: 0;
-        margin-left: 0;
-        /* background-color: black; */
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-       
-    }
+  main .interface {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .interface aside img {
+    display: none;
+  }
 
-    .interface aside .botao button {
-        width: 140px;
-        height: 60px;
-      }
+  .interface aside .botao {
+    position: relative;
+    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    /* background-color: black; */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .interface aside .botao button {
+    width: 140px;
+    height: 60px;
+  }
 }
