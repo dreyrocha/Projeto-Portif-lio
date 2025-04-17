@@ -15,6 +15,17 @@ header,
   background-color: #0b150e;
   color: #e0e0e0;
 }
+/* classe fixa */
+.textos {
+    color: #00ff66;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0px 40px;
+}
+
+p, h5,h3 {
+  font-family: 'poppins', Arial;
+}
 
 .initial.home {
   display: flex;
@@ -201,7 +212,6 @@ main .projetos {
 .txt-projetos h2 {
   color: #00ff66;
   font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -246,4 +256,31 @@ main .projetos {
   font-size: 0.95rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Artigos */
+.initial.artigos {
+  padding: 50px 100px;
+  height: auto;
+}
+
+.card1:hover {
+  background-color:#162a1c;
+  cursor: pointer;
+}
+
+.section_art {
+  padding: 50px 150px;
+} 
+
+.section_art .divisao {
+  margin:10px 0px;
+}
+
+.section_art .date {
+  color: #8caca1;
+}
+
+.section_art .title_art {
+  color:#00ff66;
 }
