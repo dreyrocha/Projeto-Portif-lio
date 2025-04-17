@@ -17,11 +17,30 @@ header,
 }
 /* classe fixa */
 .textos {
-    color: #00ff66;
+    color:  #0ec563;
     font-size: 2.5rem;
     font-weight: 700;
     padding: 0px 40px;
 }
+
+button {
+  background-color: #0ec563;
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 0px 0px 100px;
+  font-size: 15pt;
+}
+button:hover {
+  background-color: #055a2d;
+}
+
+button a {
+  color: #0b150e;
+}
+
 
 p, h5,h3 {
   font-family: 'poppins', Arial;
@@ -104,7 +123,9 @@ a {
   color: #0ec563;
 }
 
-header .NavEnd a:hover {
+
+
+a:hover {
   color: #055a2d;
 }
 
@@ -148,28 +169,11 @@ header .NavEnd a:hover {
   font-family: "poppins", sans-serif;
 }
 
-.initial .direito article button {
-  background-color: #0ec563;
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 40px 0px 0px 100px;
-  font-size: 15pt;
-}
-.initial .direito article button:hover {
-  background-color: #055a2d;
-}
-
-.initial .direito article button a {
-  color: #0b150e;
-}
 
 /* sobre */
 
 .initnav.curriculo {
-  width: 500px;
+  width: 30%;
  
 }
 
@@ -179,15 +183,38 @@ header .NavEnd a:hover {
   padding: 40px 80px;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0px 200px;
 }
 
 .esquerdo.curriculo {
   flex: 1;
   max-width: 70%; 
+  border: solid 1px ;
+  padding: 20px;
+  border-style: dashed;
+  
 }
 
+.esquerdo.curriculo h1 {
+  font-size: 40pt;
+}
+
+.esquerdo.curriculo h2 {
+  color: #0ec563;
+} 
+
+.esquerdo.curriculo ul li{
+  font-family: "poppins", Arial;
+  margin-left: 20px;
+} 
+
+
 .direito.curriculo {
-  width: 25%;
+  width:10%;
+}
+
+.direito.curriculo a {
+  font-size: 21pt;
 }
 
 .direito.curriculo article {
@@ -210,7 +237,6 @@ main .projetos {
 }
 
 .txt-projetos h2 {
-  color: #00ff66;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -226,6 +252,7 @@ main .projetos {
 .box {
   background-color: #101613;
   width: 280px;
+  height: 350px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -236,6 +263,7 @@ main .projetos {
 
 .box:hover {
   transform: scale(1.05);
+  border: solid 1px #00ff66;
 }
 
 .card-img {
@@ -264,10 +292,31 @@ main .projetos {
   height: auto;
 }
 
-.card1:hover {
-  background-color:#162a1c;
-  cursor: pointer;
+.card1 {
+  position: relative;
+  display: inline-block;
 }
+
+/* efeito do card */
+
+.card1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #00ff66; /* cor da linha */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card1:hover::after {
+  transform: scaleX(1);
+}
+
+
 
 .section_art {
   padding: 50px 150px;
@@ -277,10 +326,74 @@ main .projetos {
   margin:10px 0px;
 }
 
-.section_art .date {
+.section_art .date, p {
   color: #8caca1;
 }
 
 .section_art .title_art {
-  color:#00ff66;
+  color: #0ec563;
+}
+
+.ver_mais {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.ver_mais {
+  justify-content: center;
+  align-items: center;
+  color: #0b150e;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #c8d8d3;
+  color: #175338;
+}
+
+
+.rodape{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  height: 20vh;
+  font-size: 15pt;
+  
+}
+
+footer a {
+  font-family: "poppins", Arial;
+  font-weight: 600;
+  color: #055a2d;
+}
+
+.icons i {
+  font-size: 30px;
+}
+.icons, .navs {
+  display: flex;
+  align-items: center;
+  gap:10px
+}
+
+/* creditos developer */
+#developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#c8d8d3;
+  height: 50px;
+}
+
+#developer h1 {
+  font-family: 'poppins', Arial;
+  font-size: 10pt;
+  color:#055a2d;
 }
