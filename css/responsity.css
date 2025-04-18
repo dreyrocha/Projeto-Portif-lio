@@ -2,13 +2,11 @@
   /* tamanho da imagem */
   .initial .esquerdo img {
     width: 30vh;
- 
   }
 
   /* section celular */
   .direito {
     justify-content: center;
-    
   }
 
   .interface {
@@ -37,20 +35,33 @@
 
   .initial.home .direito h1 {
     display: block;
-    font-size: 40pt;
-    margin: 10px 50px;
+    font-size: 30pt;
+    margin: 10px 25px;
+   
   }
   .initial.home .direito h2 {
+    margin-top: 0;
     display: block;
-    font-size: 25pt;
-    margin: 0px 50px;
-  }
-  .initial.projetos {
-    height: 100%;
-    padding: 30px 55px;
+    font-size: 15pt;
+    margin: 0px 25px;
   }
 
   /* projetos */
+
+  .initial.projetos {
+    height: 100%;
+    width: 100%;
+    padding: 30px 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    width: 350px;
+  }
+
+  .box {
+    width: 480px;
+  }
 
   .initial.projetos .txt-projetos h2 {
     display: flex;
@@ -59,16 +70,7 @@
     text-align: center;
     margin: 30px 0px 0px;
     margin-bottom: 0px;
-  }
-
-  .box {
-    width: 85%;
-  }
-  .cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
+    font-size: 20pt;
   }
 
   /* artigos */
@@ -87,7 +89,7 @@
   }
 
   .section_art .divisao {
-    margin: 20px 0px;
+    margin: 2px 0px;
   }
 
   /* artigos */
@@ -95,18 +97,50 @@
     padding: 20px 0px;
     height: auto;
   }
+  .txt_artigos {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .textos {
+    font-size: 20pt;
+  }
+
+  .section_art {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
 
   /* header curriculo e artigos */
   .initnav.curriculo {
-    width: 70%;
+    width: 100%;
+  }
+  .initnav.curriculo .logo a span {
+    font-size: 35pt;
+  }
+  .initnav.curriculo h1 {
+    font-size: 25pt;
   }
 
   /* curriculo */
-  .initial.curriculo {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  .section_art.curriculo {
+    max-width: 95%;
+    padding: 10px;
+  }
 
+  .section_art.curriculo h1 {
+    font-size: 20pt;
+  }
+
+  .section_art.curriculo h2 {
+    margin: 25px 0px 0px;
+    font-size: 12pt;
+  }
+
+  .section_art.curriculo b {
+    font-size: 11pt;
   }
 
   .esquerdo.curriculo {
@@ -115,7 +149,12 @@
 
   /* rodape */
   .rodape {
-    width: 100%;
+    height: 100%;
+  }
+
+  .link-footer {
+    justify-content: center;
+    gap: 12px;
   }
 
   /* sobre */
