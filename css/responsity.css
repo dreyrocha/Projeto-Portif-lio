@@ -1,34 +1,138 @@
-@media (max-width: 679px) {
-  .interface article {
-    margin: 50px;
+@media (max-width: 600px) {
+  /* tamanho da imagem */
+  .initial .esquerdo img {
+    width: 30vh;
+ 
   }
-}
 
-@media (max-width: 1200px) {
-  main .interface {
-    display: inline;
+  /* section celular */
+  .direito {
     justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    
   }
-  .interface aside img {
+
+  .interface {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+  }
+  header .NavEnd ul,
+  .divisao {
     display: none;
   }
 
-  .interface aside .botao {
-    position: relative;
-    margin: 0;
-    margin-top: 0;
-    margin-left: 0;
-    /* background-color: black; */
-    width: 100%;
-    text-align: center;
+  .initial.home,
+  .initial.artigos,
+  .initial.projetos {
+    display: block;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .initial.home .esquerdo {
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  .interface aside .botao button {
-    width: 140px;
-    height: 60px;
+  .initial.home .direito h1 {
+    display: block;
+    font-size: 40pt;
+    margin: 10px 50px;
+  }
+  .initial.home .direito h2 {
+    display: block;
+    font-size: 25pt;
+    margin: 0px 50px;
+  }
+  .initial.projetos {
+    height: 100%;
+    padding: 30px 55px;
+  }
+
+  /* projetos */
+
+  .initial.projetos .txt-projetos h2 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0px 0px;
+    margin-bottom: 0px;
+  }
+
+  .box {
+    width: 85%;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  /* artigos */
+  .initial.artigos {
+    padding: 20px 5px;
+    height: auto;
+  }
+
+  .card1 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .section_art.curriculo {
+    padding: 20px 50px;
+  }
+
+  .section_art .divisao {
+    margin: 20px 0px;
+  }
+
+  /* artigos */
+  .initial.artigos {
+    padding: 20px 0px;
+    height: auto;
+  }
+
+  /* header curriculo e artigos */
+  .initnav.curriculo {
+    width: 70%;
+  }
+
+  /* curriculo */
+  .initial.curriculo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+
+  .esquerdo.curriculo {
+    max-width: 100%;
+  }
+
+  /* rodape */
+  .rodape {
+    width: 100%;
+  }
+
+  /* sobre */
+  .initial.curriculo {
+    min-height: 80vh;
+    display: flex;
+  }
+
+  .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1390px) {
+  .initial.projetos h1 {
+    font-size: 10pt;
   }
 }

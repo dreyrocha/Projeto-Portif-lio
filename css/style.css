@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Gobold";
 }
 
-body {
+html, body {
   height: 100%;
+  overflow-x: clip;
 }
 header {
   display: flex;
@@ -27,22 +29,34 @@ header,
   padding: 0px 40px;
 }
 
-button {
+.ver_mais {
+
+  width: 250px;
   background-color: #0ec563;
-  width: 50%;
-  height: 50px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 40px 0px 0px 100px;
   font-size: 15pt;
-}
-button:hover {
-  background-color: #055a2d;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-button a {
+.ver_mais span {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ver_mais:hover {
+  background-color: #055a2d;
   color: #0b150e;
+}
+
+.ver_mais {
+  color: #c8d8d3;
 }
 
 p,
@@ -53,9 +67,10 @@ h3 {
 
 .initial.home {
   display: flex;
-  height: 70vh;
-  padding: 0 100px;
+  min-height: 70vh;
+  padding: 0 10px;
   align-items: center;
+  justify-content: center;
 }
 header .interface {
   align-items: center;
@@ -63,20 +78,18 @@ header .interface {
 }
 
 .interface {
-  /* margin: 0px 100px; */
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.interface .expandir {
-  color: white;
-  text-decoration: none;
-  transition: 0.6s ease-in-out;
-}
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 30px 0px;
 
-.expandir:hover {
-  transform: scale(1.2);
 }
 
 main .interface {
@@ -157,18 +170,31 @@ a:hover {
   width: 100%;
 }
 
+.esquerdo {
+  height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .initial .esquerdo img {
-  width: 75%;
+  width: 60vh;
 }
 
 .initial .direito article h1 {
-  font-size: 55pt;
+  font-size: 70pt;
   color: #0ec563;
 }
 
+.direito {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+}
+
 .initial .direito article h2 {
-  margin-top: 10px;
-  font-size: 35pt;
+  font-size: 30pt;
   font-family: "poppins", sans-serif;
 }
 
@@ -181,13 +207,11 @@ a:hover {
 .initial.curriculo {
   min-height: 80vh;
   display: flex;
-  padding: 40px 80px;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 0px 200px;
 }
 
-.esquerdo.curriculo {
+.section_art.curriculo {
   flex: 1;
   max-width: 70%;
   border: solid 1px;
@@ -195,38 +219,43 @@ a:hover {
   border-style: dashed;
 }
 
-.esquerdo.curriculo h1 {
+.section_art.curriculo h1 {
   font-size: 40pt;
 }
 
-.esquerdo.curriculo h2 {
+.section_art.curriculo h2 {
   color: #0ec563;
   margin: 25px 0px 0px;
 }
 
-.esquerdo.curriculo ul,
+.section_art.curriculo ul,
 li,
 b {
   font-family: "poppins", Arial;
 }
-.esquerdo.curriculo ul,
+.section_art.curriculo ul,
 li {
   margin-left: 11px;
 }
 
-.esquerdo.curriculo b {
+.section_art.curriculo b {
   color: #0ec563;
 }
-
 
 /* projetos */
 
 .initial.projetos {
-  display: block;
-  padding: 50px 100px;
-  height: 80vh;
+  min-height: 80vh;
+  /* background-color: #0ec563; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.initial.projetos section {
+  width: 90%;
+}
 main .projetos {
   display: block;
 }
@@ -234,7 +263,6 @@ main .projetos {
 .txt-projetos h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
 }
 
 .cards {
@@ -328,50 +356,63 @@ p {
   color: #0ec563;
 }
 
-.ver_mais {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.ver_mais {
-  justify-content: center;
-  align-items: center;
-  color: #0b150e;
-}
-
 /* footer */
 
 footer {
   display: flex;
-  text-align: center;
   justify-content: center;
   background-color: #c8d8d3;
   color: #175338;
+  padding: 20px 0;
 }
 
 .rodape {
   display: flex;
-  width: 40%;
-  justify-content: space-around;
-  height: 20vh;
-  font-size: 15pt;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.link-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+
+.esquerdo,
+.direito {
+  display: flex;
+  gap: 20px;
 }
 
 footer a {
   font-family: "poppins", Arial;
   font-weight: 600;
   color: #055a2d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #033c1f;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .icons i {
   font-size: 30px;
+  color: #055a2d;
 }
-.icons,
-.navs {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+
+.icons i:hover {
+  color: #033c1f;
 }
 
 /* creditos developer */

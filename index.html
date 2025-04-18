@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <div class="divisao"></div>
-                <a class="expandir" href="#">menu</a>
+                <!-- <a class="expandir" href="#">menu</a> -->
             </div>
             <div class="NavEnd">
                 <ul>
@@ -53,11 +53,15 @@
                     <h1> Eaí?<br>Meu nome é <span class="effect">Drey!</span>
                     </h1>
                     <h2>Eu sou Dev Front-End!</h2>
-                    <a href="/pages/sobre.html"><button class="ver_mais">Sobre mim</button></a>
+                    <section class="botao">
+                        <a href="/pages/sobre.html" class="ver_mais"><span> Sobre mim</span></a>
+                    </section>
+
                 </article>
             </section>
         </div>
         <div class="initial projetos">
+            <section>
             <div class="txt-projetos">
                 <h2 id="txt" class="textos">/projetos</h2>
             </div>
@@ -95,6 +99,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </div>
         <section class="initial artigos">
             <div class="txt_artigos" id="txt_art">
@@ -145,17 +150,19 @@
         </section>
         <footer>
             <div class="rodape">
-                <div class="navs">
-
-                    <div class="direito">
-                        <a href="#txt_art">artigos</a><br>
-                        <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
-                    </div>
+                <!-- linha com os links esquerdo e direito -->
+                <div class="link-footer">
                     <div class="esquerdo">
-                        <a href="/pages/sobre.html">curriculo</a><br>
+                        <a href="/pages/sobre.html">curriculo</a>
                         <a href="#txt">projetos</a>
                     </div>
+                    <div class="direito">
+                        <a href="#txt_art">artigos</a>
+                        <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
+                    </div>
                 </div>
+        
+                <!-- redes sociais -->
                 <div class="icons">
                     <a href="https://www.instagram.com/dreydev/" target="_blank">
                         <i class="bi bi-instagram"></i>
@@ -178,11 +185,7 @@
                 © 2025 Drey. Todos os direitos reservados
             </h1>
         </div>
-
     </main>
-
-
-
     <script src="js/javascript.js"></script>
 
 </body>
