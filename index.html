@@ -29,8 +29,6 @@
                             class="effect">y</span>
                     </a>
                 </div>
-                <div class="divisao"></div>
-                <!-- <a class="expandir" href="#">menu</a> -->
             </div>
             <div class="NavEnd">
                 <ul>
@@ -39,7 +37,15 @@
                     <li> <a href="#txt_art">artigos</a></li>
                     <li><a href="#developer"> contacte-me</a></li>
                 </ul>
-
+                <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+                <!-- Sidebar -->
+                <div class="sidebar" id="sidebar">
+                    <div class="close-btn" onclick="toggleSidebar()">✕</div>
+                    <a href="/pages/sobre.html">Currículo</a>
+                    <a href="#txt">Projetos</a>
+                    <a href="#txt_art">Artigos</a>
+                    <a href="#developer">Contato</a>
+                </div>
             </div>
         </section>
     </header>
@@ -62,44 +68,44 @@
         </div>
         <div class="initial projetos">
             <section>
-            <div class="txt-projetos">
-                <h2 id="txt" class="textos">/projetos</h2>
-            </div>
-
-            <div class="cards">
-                <!-- Card 1 -->
-                <div class="box">
-                    <div class="card-img"></div>
-                    <div class="card-footer">
-                        <h3>Projeto</h3>
-                    </div>
+                <div class="txt-projetos">
+                    <h2 id="txt" class="textos">/projetos</h2>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="box">
-                    <div class="card-img"></div>
-                    <div class="card-footer">
-                        <h3>Projeto</h3>
+                <div class="cards">
+                    <!-- Card 1 -->
+                    <div class="box">
+                        <div class="card-img"></div>
+                        <div class="card-footer">
+                            <h3>Projeto</h3>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="box">
-                    <div class="card-img"></div>
-                    <div class="card-footer">
-                        <h3>Projeto</h3>
+                    <!-- Card 2 -->
+                    <div class="box">
+                        <div class="card-img"></div>
+                        <div class="card-footer">
+                            <h3>Projeto</h3>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 4 -->
-                <div class="box">
-                    <div class="card-img"></div>
-                    <div class="card-footer">
-                        <h3>Projeto</h3>
+                    <!-- Card 3 -->
+                    <div class="box">
+                        <div class="card-img"></div>
+                        <div class="card-footer">
+                            <h3>Projeto</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="box">
+                        <div class="card-img"></div>
+                        <div class="card-footer">
+                            <h3>Projeto</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
         <section class="initial artigos">
             <div class="txt_artigos" id="txt_art">
@@ -161,7 +167,7 @@
                         <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
                     </div>
                 </div>
-        
+
                 <!-- redes sociais -->
                 <div class="icons">
                     <a href="https://www.instagram.com/dreydev/" target="_blank">
