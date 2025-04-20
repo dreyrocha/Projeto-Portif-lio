@@ -34,7 +34,7 @@
 
   .initial.home .direito h1 {
     display: block;
-    font-size: 30pt;
+    font-size: 25pt;
     margin: 10px 25px;
   }
   .initial.home .direito h2 {
@@ -169,6 +169,9 @@
   .initnav .logo span {
     font-size: 50px;
   }
+  header {
+    height: 80px;
+  }
 }
 
 @media (max-width: 1390px) {
@@ -181,7 +184,7 @@
   }
 
   .initial .esquerdo img {
-    width: 45vh;
+    width: 25vh;
   }
 }
 
