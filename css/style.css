@@ -202,26 +202,35 @@ a:hover {
   width: 40%;
 }
 
-.initial.curriculo {
+.curriculo {
+  background-color: #0b150e;
   min-height: 80vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  display: block;
+}
+.sobre {
+  padding: 10px 150px;
+  height: auto;
 }
 
-.section_art.curriculo {
+.textos-principais {
   flex: 1;
-  max-width: 70%;
-  border: solid 1px;
-  padding: 20px;
+  width: 100%;
+  border: solid 1px white;
+  padding: 20px 20px;
   border-style: dashed;
 }
-
-.section_art.curriculo h1 {
+.curriculo h1 {
   font-size: 40pt;
+  color: #8caca1;
 }
 
-.section_art.curriculo h2 {
+.section_art.curriculo p,
+li,
+h3 {
+  color: #8caca1;
+}
+
+.curriculo h2 {
   color: #0ec563;
   margin: 25px 0px 0px;
 }
@@ -291,11 +300,16 @@ main .projetos {
 }
 
 .card-img {
-  height: 220px;
-  background-color: #0b150e;
-  border-radius: 20px 20px 0 0;
+  width: 100%;
+  overflow: hidden;
 }
-
+.card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 15px;
+}
 .card-footer {
   padding: 10px;
   background-color: #101613;

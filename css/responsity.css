@@ -83,7 +83,7 @@
   }
 
   .section_art.curriculo {
-    padding: 20px 50px;
+    padding: 20px 30px;
   }
 
   .section_art .divisao {
@@ -123,8 +123,8 @@
   }
 
   /* curriculo */
-  .section_art.curriculo {
-    max-width: 95%;
+  .textos-principais {
+    width: 100%;
     padding: 10px;
   }
 
@@ -160,6 +160,14 @@
     min-height: 80vh;
     display: flex;
   }
+  .sobre {
+    padding: 10px 30px;
+  }
+  .curriculo h1 {
+    font-size: 20pt;
+  }
+  
+
 
   .interface {
     display: flex;
@@ -172,7 +180,10 @@
   header {
     height: 80px;
   }
+
 }
+
+
 
 @media (max-width: 1390px) {
   .initial.projetos h1 {
@@ -220,7 +231,5 @@
 .section_art {
   padding: 50px 50px;
 }
-
-
 
 }
