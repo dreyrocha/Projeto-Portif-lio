@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 705px) {
   /* tamanho da imagem */
   .initial .esquerdo img {
     width: 30vh;
@@ -36,7 +36,6 @@
     display: block;
     font-size: 30pt;
     margin: 10px 25px;
-   
   }
   .initial.home .direito h2 {
     margin-top: 0;
@@ -170,17 +169,55 @@
   .initnav .logo span {
     font-size: 50px;
   }
-  
 }
-
 
 @media (max-width: 1390px) {
   .initial.projetos h1 {
     font-size: 10pt;
   }
+  .initial .direito article h1 {
+    font-size: 45pt;
+    color: #0ec563;
+  }
+
+  .initial .esquerdo img {
+    width: 45vh;
+  }
 }
-@media (min-width: 800px) {
-  .menu-icon, .sidebar, .close-btn {
+
+@media (min-width: 700px) {
+  .menu-icon,
+  .sidebar,
+  .close-btn {
     display: none;
   }
+}
+@media (max-width: 950px) {
+  .initial .direito article h1 {
+    font-size: 35pt;
+  }
+  .initial .direito article h2 {
+    font-size: 25pt;
+  }
+
+  .initial .esquerdo img {
+    width: 35vh;
+  }
+  .botao {
+    height: 40px;
+  }
+
+  /* artigos */
+
+  .initial.artigos {
+    padding: 120px 0px;
+
+  }
+  
+.section_art {
+  padding: 50px 50px;
+}
+
+
+
 }
