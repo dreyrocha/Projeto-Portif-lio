@@ -1,4 +1,7 @@
-@media (max-width: 705px) {
+
+
+
+@media (max-width: 905px) {
   /* tamanho da imagem */
   .initial .esquerdo img {
     width: 30vh;
@@ -90,11 +93,6 @@
     margin: 20px 0px;
   }
 
-  /* artigos */
-  .initial.artigos {
-    padding: 20px 0px;
-    height: auto;
-  }
   .txt_artigos {
     display: flex;
     align-items: center;
@@ -166,8 +164,6 @@
   .curriculo h1 {
     font-size: 20pt;
   }
-  
-
 
   .interface {
     display: flex;
@@ -196,10 +192,17 @@
 
   .initial .esquerdo img {
     width: 25vh;
+    
   }
+
+  .sobre.initial {
+
+    padding: 10px 110px;
+  }
+  
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .menu-icon,
   .sidebar,
   .close-btn {
@@ -224,12 +227,24 @@
   /* artigos */
 
   .initial.artigos {
-    padding: 120px 0px;
+    padding: 20px 0px;
 
   }
   
 .section_art {
   padding: 50px 50px;
 }
+  .card-galery {
+    width: 100%;
+  
+}
+
+@media (max-width: 650px) {
+  .sobre.initial {
+    padding: 10px 35px;
+  }
+  
+  }
 
 }
+
