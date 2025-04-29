@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsity.css">
+    <!-- <link rel="stylesheet" href="/css/responsity.css"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <section class="interface">
+        <nav>
             <div class="initnav">
                 <div class="logo">
                     <a href="/index.html">
@@ -28,20 +28,20 @@
             </div>
             <div class="NavEnd">
                 <ul>
-                    <li> <a href="/index.html">inicio</a></li>
-                    <li> <a href="/index.html#txt">projetos</a></li>
-                    <li> <a href="/pages/artigos.html">artigos</a></li>
-                    <li><a href="/index.html#developer"> contacte-me</a></li>
+                    <li> <a href="index.html">inicio</a></li>
+                    <li> <a href="#txt">projetos</a></li>
+                    <li> <a href="#txt_art">artigos</a></li>
+                    <li><a href="#developer"> contacte-me</a></li>
                 </ul>
                 <div class="menu-icon" onclick="toggleSidebar()">☰</div>
                 <!-- Sidebar -->
                 <div class="sidebar" id="sidebar">
                     <div class="close-btn" onclick="toggleSidebar()">✕</div>
-                    <a href="/index.html">
-                        <i class="bi bi-house-door-fill"></i>
-                        <span>Início</span>
+                    <a href="/pages/sobre.html">
+                        <i class="bi bi-person-badge-fill"></i>
+                        <span>Sobre mim</span>
                     </a>
-                    <a href="/index.html#txt">
+                    <a href="#txt">
                         <i class="bi bi-folder-fill"></i>
                         <span>projetos</span>
                     </a>
@@ -50,74 +50,76 @@
 
                         <span>Artigos</span>
                     </a>
-                    <a href="/index.html#developer">
+                    <a href="#developer">
                         <i class="bi bi-envelope-arrow-up-fill"></i>
                         <span>Contato</span>
                     </a>
                 </div>
             </div>
-        </section>
+        </nav>
+
     </header>
     <main>
-        <div class="curriculo">
-            <section class="sobre initial">
+        <div class="initial">
+            <section class="resumo">
                 <h1>Quem sou eu?</h1>
 
                 <h2>
                     Resumo
                 </h2>
                 <p>
-                    Sou Andrey Rocha, UI/UX Designer e Desenvolvedor Front-End. Tenho como foco transformar ideias em experiências digitais reais, acessíveis e intuitivas. No front, busco criar soluções que impactem pessoas de forma prática; no design, valorizo a união entre visual e funcionalidade. Sou movido por inovação, propósito e vontade de fazer a diferença com tecnologia.
+                    Sou Andrey Rocha, UI/UX Designer e Desenvolvedor Front-End. Tenho como foco transformar ideias em
+                    experiências digitais reais, acessíveis e intuitivas. No front, busco criar soluções que impactem
+                    pessoas de forma prática; no design, valorizo a união entre visual e funcionalidade. Sou movido por
+                    inovação, propósito e vontade de fazer a diferença com tecnologia.
                 </p>
 
             </section>
-            <section class="section_art curriculo">
-                <div class="textos-principais">
-                    <h1>Andrey Rocha</h1>
-                    <h3><b>UI, UX designer e Desenvolvedor Front-End</b></h3>
-                    <h3>Belém - PA</h3>
-                    <h2>
-                        Formação
-                    </h2>
-                    <ul>
-                        <li>Sistemas de Informação - <b> Universidade Federal do Pará </b></li>
-                        <li>Análise e Desenvolvimento de Sistemas - <b> Universidade da Amazônia</b></li>
-                    </ul>
-                    <h2>
-                        experiências
-                    </h2>
-                    <ul>
-                        <li>Premiação semana ubíqua 2024, desenvolvimento de um website relacionado Conferência das
-                            Relações
-                            Climáticas (COP 30)</li>
+            <section class="curriculo"">
+                <div class=" page_curriculo">
+                <h1>Andrey Rocha</h1>
+                <h2><b>UI / UX designer e Desenvolvedor Front-End</b></h2>
+                <h3>Belém - PA</h3>
+                <h1>
+                    Formação
+                </h1>
+                <ul>
+                    <li>Sistemas de Informação - <b> Universidade Federal do Pará </b></li>
+                    <li>Análise e Desenvolvimento de Sistemas - <b> Universidade da Amazônia</b></li>
+                </ul>
+                <h1>
+                    Experiências
+                </h1>
+                <ul>
+                    <li>Premiação semana ubíqua 2024, desenvolvimento de um website relacionado Conferência das
+                        Relações
+                        Climáticas (COP 30)</li>
 
-                    </ul>
-                    <h2>
-                        Cursos Complementares
-                    </h2>
-                    <ul>
-                        <li>
-                            Curso Complementar de Programador Web - <b>Instituto Federal do Rio Grande do Sul</b>
-                        </li>
-                    </ul>
-                    <h2>
-                        Habilidades
-                    </h2>
-                    <p>
-                        React | Javascript | Figma | Mysql | Python | Google Workshop | Pacote Office
-                    </p>
-                    <div class="navLinks">
-                        <a href="/docs/curriculo.pdf" download class="btn-curriculo">
-                            <span> Baixar currículo</span>
-                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
-                        </a>
-                        <article>
-                            <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
+                </ul>
+                <h1>
+                    Cursos Complementares
+                </h1>
+                <ul>
+                    <li>
+                        Curso Complementar de Programador Web - <b>Instituto Federal do Rio Grande do Sul</b>
+                    </li>
+                </ul>
+                <h1>
+                    Habilidades
+                </h1>
+                <p>
+                    React | Javascript | Figma | Mysql | Python | Google Workshop | Pacote Office
+                </p>
 
-                            <a href="https://www.linkedin.com/in/andrey-rocha-790b6b1a0/" target="_blank">linkedin</a>
-
-                        </article>
-                    </div>
+                <div class="navLinks" id="center">
+                    <section class="botao" id="center">
+                        <a href="/docs/curriculo.pdf" download="" class="ver_mais" id="center"> <i id="center"
+                                class="bi bi-file-earmark-arrow-down-fill"></i>
+                            Baixar curriculo</a>
+                    </section>
+                    <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
+                    <a href="https://www.linkedin.com/in/andrey-rocha-790b6b1a0/" target="_blank">linkedin</a>
+                </div>
             </section>
 
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artigos</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsity.css">
+    <!-- <link rel="stylesheet" href="/css/responsity.css"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <section class="interface">
+        <nav>
             <div class="initnav">
                 <div class="logo">
                     <a href="/index.html">
@@ -27,48 +27,54 @@
             </div>
             <div class="NavEnd">
                 <ul>
-                    <li> <a href="/index.html">inicio</a></li>
-                    <li> <a href="/index.html#txt">projetos</a></li>
-                    <li> <a href="/pages/artigos.html">artigos</a></li>
-                    <li><a href="/index.html#developer"> contacte-me</a></li>
+                    <li> <a href="index.html">inicio</a></li>
+                    <li> <a href="#txt">projetos</a></li>
+                    <li> <a href="#txt_art">artigos</a></li>
+                    <li><a href="#developer"> contacte-me</a></li>
                 </ul>
                 <div class="menu-icon" onclick="toggleSidebar()">☰</div>
                 <!-- Sidebar -->
                 <div class="sidebar" id="sidebar">
                     <div class="close-btn" onclick="toggleSidebar()">✕</div>
-
-
-                    <a href="/index.html">
-                        <i class="bi bi-house-door-fill"></i>
-                        <span>Início</span>
-                    </a>
                     <a href="/pages/sobre.html">
                         <i class="bi bi-person-badge-fill"></i>
                         <span>Sobre mim</span>
                     </a>
-                    <a href="/index.html#txt">
+                    <a href="#txt">
                         <i class="bi bi-folder-fill"></i>
                         <span>projetos</span>
                     </a>
-                    <a href="/index.html#developer">
+                    <a href="/pages/artigos.html">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+
+                        <span>Artigos</span>
+                    </a>
+                    <a href="#developer">
                         <i class="bi bi-envelope-arrow-up-fill"></i>
                         <span>Contato</span>
                     </a>
                 </div>
             </div>
-        </section>
+        </nav>
+
     </header>
-    <main class="curriculo">
-        <section class="boxproject">
-            <img src="/img/image.png" alt="img-acessive">
-        </section>
-        <section class="sobre initial">
-            <a id="center" target="_blank" href="https://stackblitz.com/edit/vitejs-vite-rw2utf?file=README.md"><i
-                class="bi bi-box-arrow-up-right"></i> Clique aqui para acessar o projeto</a>
+    <main class="initial">
+        <section class="botao" id="center">
+            <a href="/pages/artigos.html" id="center" class="ver_mais"> <i class="bi bi-box-arrow-up-right" id="center"></i> Acesse aqui</a>
+    </section>
+    <section class="boxproject" id="center">
+        <img src="/img/image.png" alt="img-acessive">
+         
+        
+    </section>
+    
+    <section class="sobre">
+
 
             <h2>Tecnologias Utilizadas</h2>
             <p>
-                <b> Vite.js:</b> Ferramenta de build que oferece uma experiência de desenvolvimento ágil e eficiente.
+                <b> Vite.js:</b> Ferramenta de build que oferece uma experiência de desenvolvimento ágil e
+                eficiente.
                 <br>
 
                 <b> JavaScript:</b> Linguagem de programação principal do projeto. <br>
@@ -78,11 +84,12 @@
                 <b> StackBlitz:</b> Ambiente de desenvolvimento online que permite executar e editar o projeto
                 diretamente no
                 navegador.
-            </p>         
+            </p>
 
             <h2>AcessiveCOP</h2>
             <p class="paragrafo">
-                O COP-30.js é um projeto desenvolvido com Vite.js, uma ferramenta de build moderna e extremamente rápida
+                O COP-30.js é um projeto desenvolvido com Vite.js, uma ferramenta de build moderna e extremamente
+                rápida
                 para aplicações web. Utilizando JavaScript e HTML, este projeto é executado diretamente no navegador
                 através do StackBlitz, eliminando a necessidade de instalações locais.
             </p>
@@ -91,14 +98,18 @@
             </h2>
             <p class="paragrafo">
                 Este site foi criado como parte do componente curricular Front-end Frameworks, no curso de Análise e
-                Desenvolvimento de Sistemas da Universidade da Amazônia (UNAMA). Desenvolvido durante o segundo período
+                Desenvolvimento de Sistemas da Universidade da Amazônia (UNAMA). Desenvolvido durante o segundo
+                período
                 da graduação, ele representa um dos meus primeiros passos no universo do desenvolvimento web. <br>
             </p>
             <p class="paragrafo">
-                A proposta gira em torno da COP30, evento internacional sobre mudanças climáticas que será sediado em
+                A proposta gira em torno da COP30, evento internacional sobre mudanças climáticas que será sediado
+                em
                 Belém. Com isso em mente, o projeto tem como objetivo propor soluções tecnológicas voltadas à
-                sustentabilidade e acessibilidade, trazendo temas relevantes para discussão — como a inclusão de pessoas
-                com deficiência (PCDs) na tecnologia, os impactos ambientais da internet e os desafios da acessibilidade
+                sustentabilidade e acessibilidade, trazendo temas relevantes para discussão — como a inclusão de
+                pessoas
+                com deficiência (PCDs) na tecnologia, os impactos ambientais da internet e os desafios da
+                acessibilidade
                 digital. <br>
             </p>
             <p class="paragrafo">
@@ -107,11 +118,12 @@
                 social. <br>
             </p>
             <p class="paragrafo">
-                Este projeto simboliza o momento em que <b> descobri minha paixão </b> pelo front-end — não só pelo código, mas
+                Este projeto simboliza o momento em que <b> descobri minha paixão </b> pelo front-end — não só pelo
+                código, mas
                 pela possibilidade de transformar ideias em interfaces que conectam pessoas e informações de forma
                 significativa.
             </p>
-        
+
     </main>
     <footer>
         <div class="rodape">

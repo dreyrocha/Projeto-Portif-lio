@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/responsity.css">
+    <!-- <link rel="stylesheet" href="css/responsity.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,10 +20,10 @@
 
 <body>
     <header>
-        <section class="interface">
+        <nav>
             <div class="initnav">
                 <div class="logo">
-                    <a href="#">
+                    <a href="/index.html">
                         <span class="effect">D</span><span class="effect">r</span><span class="effect">e</span><span
                             class="effect">y</span>
                     </a>
@@ -59,7 +59,8 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </nav>
+
     </header>
     <main>
         <div class="initial home">
@@ -71,8 +72,8 @@
                     <h1> Eaí?<br>Meu nome é <span class="effect">Drey!</span>
                     </h1>
                     <h2>Eu sou Dev Front-End!</h2>
-                    <section class="botao">
-                        <a href="/pages/sobre.html" class="ver_mais"><span> Sobre mim</span></a>
+                    <section class="botao" id="center">
+                        <a href="/pages/sobre.html" class="ver_mais" id="center">Sobre mim</a>
                     </section>
 
                 </article>
@@ -80,10 +81,7 @@
         </div>
         <div class="initial projetos">
             <section>
-                <div class="txt-projetos">
-                    <h2 id="txt" class="textos">/projetos</h2>
-                </div>
-
+                    <h1 id="center">/projetos</h1>
                 <div class="cards">
                     <!-- Card 1 -->
                     <a target="_blank" href="/pages/acessivecop.html" class="box">
@@ -93,8 +91,8 @@
                                 AcessiveCOP
                             </h3>
                             <p>
-                                
-                                Este projeto visa a criação de tecnologias e softwares para resolução de problemáticas relacionadas a COP30. 
+                                Este projeto visa a criação de tecnologias e softwares para resolução de problemáticas
+                                relacionadas a COP30.
                             </p>
                         </div>
                     </a>
@@ -125,53 +123,53 @@
                 </div>
             </section>
         </div>
-        <section class="initial artigos">
-            <div class="txt_artigos" id="txt_art">
-                <h1 class="textos">/artigos</h1>
-            </div>
-            <div class="section_art">
-                <div class="box_artigos">
-                    <div class="card1">
-                        <a href="#">
-                            <h5 class="date">
-                                12/04/2025
-                            </h5>
-                            <h3 class="title_art">
-                                A história que precisa ser dita
-                            </h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, praesentium impedit
-                                quisquam, dolore temporibus laudantium numquam dolorem animi hic deserunt obcaecati
-                                repellendus
-                                et placeat illo aspernatur nisi magnam reiciendis. Ad.
-                            </p>
-                        </a>
+        <div class="initial artigos">
+            <section>
+                <h1 id="center">/artigos</h1>
+                <div class="section_art">
+                    <div class="box_artigos">
+                        <div class="card1">
+                            <a href="#">
+                                <p>
+                                    12/04/2025
+                                </p>
+                                <h2>
+                                    A história que precisa ser dita
+                                </h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, praesentium
+                                    impedit
+                                    quisquam, dolore temporibus laudantium numquam dolorem animi hic deserunt obcaecati
+                                    repellendus
+                                    et placeat illo aspernatur nisi magnam reiciendis. Ad.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="divisao"></div>
+                        <div class="card1">
+                            <a href="#">
+                                <p>
+                                    18/05/2025
+                                </p>
+                                <h2>
+                                    Teste
+                                </h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, praesentium
+                                    impedit
+                                    quisquam, dolore temporibus laudantium numquam dolorem animi hic deserunt obcaecati
+                                    repellendus
+                                    et placeat illo aspernatur nisi magnam reiciendis. Ad.
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="divisao"></div>
-                    <div class="card1">
-                        <a href="#">
-                            <h5 class="date">
-                                18/05/2025
-                            </h5>
-                            <h3 class="title_art">
-                                Teste
-                            </h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, praesentium impedit
-                                quisquam, dolore temporibus laudantium numquam dolorem animi hic deserunt obcaecati
-                                repellendus
-                                et placeat illo aspernatur nisi magnam reiciendis. Ad.
-                            </p>
-                        </a>
-                    </div>
+                    <section class="botao" id="center">
+                        <a href="/pages/artigos.html" id="center" class="ver_mais">Ver Mais</a>
+                    </section>
                 </div>
-                <div class="botao">
-                    <a href="pages/artigos.html"><button class="ver_mais">
-                            ver mais
-                        </button></a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="rodape">

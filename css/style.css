@@ -2,35 +2,74 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gobold";
 }
 
 html,
 body {
   height: 100%;
   overflow-x: clip;
+  background-color: #0b150e;
+  font-family: 'poppins';
 }
+
+/* header/cabeçalho */
 header {
   display: flex;
   align-items: center;
-  /* min-height: 20px; */
-  padding: 20px 0px;
-  height: 130px;
+  justify-content: center;
+  padding: 24px 0px;
 }
 
-header,
+nav {
+  min-width: 73rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Iniciais gerais */
 .initial {
   background-color: #0b150e;
   color: #e0e0e0;
-}
-/* classe fixa */
-.textos {
-  color: #0ec563;
-  font-size: 2.5rem;
-  font-weight: 700;
-  padding: 0px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 60vh;
 }
 
+.initial.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+/* classe fixa */
+
+
+/* fontes padrões */
+h1 {
+  color: #0ec563;
+  font-family: "gobold", sans-serif;
+}
+h2 {
+  color:#8caca1;
+  font-family: "poppins", sans-serif;
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  color: #8caca1;
+  font-weight: 300;
+}
+
+
+/* botao */
 .ver_mais {
   width: 250px;
   background-color: #0ec563;
@@ -39,17 +78,11 @@ header,
   cursor: pointer;
   font-size: 15pt;
   height: 99%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
-.ver_mais span {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
+
+
 
 .ver_mais:hover {
   background-color: #055a2d;
@@ -60,44 +93,23 @@ header,
   color: #c8d8d3;
 }
 
-p,
-h5,
-h3 {
-  font-family: "poppins", Arial;
-}
-
-.initial.home {
-  display: flex;
-  min-height: 70vh;
-  align-items: center;
-  justify-content: center;
-}
-header .interface {
-  align-items: center;
-  height: 100%;
-}
-
-.interface {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
 
 .botao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 50px;
   margin: 30px 0px;
 }
 
-/* mains */
-main .interface {
-  margin: 0px 70px;
+/* centralizar itens */
+#center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* mains */
+
 .initnav {
-  width: 280px;
+
   height: 80px;
   display: flex;
   align-items: center;
@@ -113,8 +125,8 @@ main .interface {
 }
 
 .initnav .logo a {
+  font-family: "Gobold" ;
   text-decoration: none;
-  font-family: "Gobold";
   color: #0ec563;
 }
 .initnav .logo span {
@@ -138,15 +150,13 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: #0ec563;
+  font-family: 'gobold', 'poppins', Arial;
 }
 
 a:hover {
   color: #055a2d;
 }
 
-.interface .direito article a:hover {
-  color: #055a2d;
-}
 
 .effect {
   transition: transform 0.2s ease-in-out;
@@ -164,123 +174,58 @@ a:hover {
 }
 
 /* main */
-.initial section {
-  width: 100%;
-}
-
 .esquerdo {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-.initial .esquerdo img {
-  width: 60vh;
 }
 
-.initial .direito article h1 {
-  font-size: 60pt;
-  color: #0ec563;
+.esquerdo img {
+  width: 50vh;
 }
 
 .direito {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: initial;
 }
 
-.initial .direito article h2 {
+
+.direito article h1 {
+  font-size: 50pt;
+ 
+}
+
+.direito article h2 {
   font-size: 30pt;
-  font-family: "poppins", sans-serif;
+  
 }
 
-/* sobre */
-
-.initnav.curriculo {
-  width: 40%;
+.resumo {
+  margin: 20px 0px;
 }
 
 .curriculo {
-  background-color: #0b150e;
-  min-height: 120%;
-  display: block;
+  margin: 20px 0px;
 }
-.sobre {
-  padding: 10px 300px;
-  height: auto;
-}
-
-.textos-principais {
-  flex: 1;
-  width: 100%;
-  border: solid 1px white;
-  padding: 20px 20px;
+.page_curriculo {
+  border: solid 2px  #8caca1 ;
   border-style: dashed;
-}
-.curriculo h1 {
-  font-size: 40pt;
-  color: #8caca1;
-}
-
-.section_art.curriculo p,
-li,
-h3 {
-  color: #8caca1;
-}
-
-.curriculo h2 {
-  color: #0ec563;
-  margin: 25px 0px 0px;
-}
-
-.section_art.curriculo ul,
-li,
-b {
-  font-family: "poppins", Arial;
-}
-.section_art.curriculo ul,
-li {
-  margin-left: 11px;
-}
-
-.section_art.curriculo b {
-  color: #0ec563;
+  width: 100%;
+  padding: 20px 20px;
 }
 
 /* projetos */
-
-.initial.projetos {
-  min-height: 80vh;
-  padding: 90px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.initial.projetos section {
-  width: 100%;
-}
-main .projetos {
-  display: block;
-}
-
-.txt-projetos h2 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -325,14 +270,11 @@ main .projetos {
 }
 
 /* Artigos */
-.initial.artigos {
-  padding: 20px 100px;
-  height: auto;
-}
 
 .card1 {
   position: relative;
   display: inline-block;
+  margin: 25px 0px;
 }
 
 /* efeito do card */
@@ -354,21 +296,25 @@ main .projetos {
   transform: scaleX(1);
 }
 
-.section_art {
-  padding: 50px 150px;
+/* Espaçamento do Currículo */
+
+main h2 {
+  font-size: 15pt;
 }
 
-.section_art .divisao {
-  margin: 20px 0px;
+main ul {
+  padding: 0px 20px;
+ color: #8caca1;
+ margin: 0px 0px 30px 0px;
 }
 
-.section_art .date,
-p {
-  color: #8caca1;
+main h3 {
+  margin: 0px 0px 20px 0px;
 }
 
-.section_art .title_art {
-  color: #0ec563;
+main h1 {
+  margin: 0px 0px 5px 0px;
+  font-size: 15pt;
 }
 
 /* footer */
@@ -396,12 +342,6 @@ footer {
   width: 100%;
   padding: 0 40px;
   margin-bottom: 20px;
-}
-
-.esquerdo,
-.direito {
-  display: flex;
-  gap: 20px;
 }
 
 footer a {
@@ -449,19 +389,20 @@ footer a:hover {
 
 /* page artigos */
 
-.art .initial.artigos {
-  height: 100%;
+section {
+  padding: 0px 20px;
 }
 
 /* navlinks */
 
 .navLinks {
-  text-align: center;
-  margin: 20px 0px;
+  display: flex;
+  gap: 30px;
+  margin: 10px;
 }
 
-/* slidebar */
-/* Botão menu */
+
+
 
 .menu-icon {
   font-size: 2.2rem;
@@ -478,6 +419,10 @@ footer a:hover {
   transition: 0.3s ease-in-out;
 }
 
+
+i {
+  margin: 0px 10px;
+}
 /* Sidebar */
 .sidebar {
   position: fixed;
@@ -530,7 +475,7 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px;
+  border: solid 1px ;
   color: #101613;
   text-decoration: none;
   font-size: 1.2rem;
@@ -553,28 +498,26 @@ footer a:hover {
 
 /* Projetos-Individuais */
 
-.boxproject {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0px;
+
+.boxproject img {
+  width: 100%;
+  max-width: 400px;
+  height: 70px;
+  box-shadow: 0px 5px 10px -5px black;
+  object-fit: cover;
+  margin: 10px 0
 }
 
-.boxproject img{
-    width: 100%;
-    max-width: 600px;
-    height: 90px;
-    box-shadow: 0px 5px 10px -5px black;
-    object-fit: cover;
-  }
-
-main .paragrafo{
-  text-indent: 20px;
-  padding:0px 0px 15px 0px;
+main .paragrafo {
+  padding: 0px 0px 15px 0px;
 }
 
-.boxproject .box-img{
-  height:200px;
+.boxproject .box-img {
+  height: 200px;
   border-radius: 0;
+}
+
+.section_art {
+  margin: 20px;
 }
 
