@@ -1,249 +1,63 @@
 
 
 
-@media (max-width: 905px) {
+@media (max-width: 1200px) {
   /* tamanho da imagem */
-  .initial .esquerdo img {
-    width: 30vh;
-  }
-
-  /* section celular */
-  .direito {
-    justify-content: center;
-  }
-
-  .interface {
-    width: 100%;
-    display: flex;
-    justify-content: inherit;
-  }
-  header .NavEnd ul {
-    display: none;
-  }
-
-  .initial.home,
-  .initial.artigos,
-  .initial.projetos {
-    display: block;
-    padding: 10px;
-    height: 100%;
-  }
-
-  .initial.home .esquerdo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .initial.home .direito h1 {
-    display: block;
-    font-size: 25pt;
-    margin: 10px 25px;
-  }
-  .initial.home .direito h2 {
-    margin-top: 0;
-    display: block;
-    font-size: 15pt;
-    margin: 0px 25px;
-  }
-
-  /* projetos */
-
-  .initial.projetos {
-    height: 100%;
-    width: 100%;
-    padding: 30px 5px;
-    display: flex;
-    justify-content: center;
-  }
-  .cards {
-    width: 100%;
-  }
-
-  .box {
-    width: 500px;
-  }
-
-  .initial.projetos .txt-projetos h2 {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    text-align: center;
-    margin: 30px 0px 0px;
-    margin-bottom: 30px;
-    font-size: 20pt;
-  }
-
-  /* artigos */
-  .initial.artigos {
-    padding: 20px 5px;
-    height: auto;
-  }
-
-  .card1 {
-    position: relative;
-    display: inline-block;
-  }
-
-  .section_art.curriculo {
-    padding: 20px 30px;
-  }
-
-  .section_art .divisao {
-    margin: 20px 0px;
-  }
-
-  .txt_artigos {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-  }
-
-  .textos {
-    font-size: 20pt;
-  }
-
-  .section_art {
-    width: 100%;
-    margin: 0;
-    padding: 15px;
-  }
-
-  /* header curriculo e artigos */
-  .initnav.curriculo {
-    width: 100%;
-  }
-  .initnav.curriculo .logo a span {
-    font-size: 35pt;
-  }
-  .initnav.curriculo h1 {
-    font-size: 25pt;
-  }
-
-  /* curriculo */
-  .textos-principais {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .section_art.curriculo h1 {
-    font-size: 20pt;
-  }
-
-  .section_art.curriculo h2 {
-    margin: 25px 0px 0px;
-    font-size: 12pt;
-  }
-
-  .section_art.curriculo b {
-    font-size: 11pt;
-  }
-
-  .esquerdo.curriculo {
-    max-width: 100%;
-  }
-
-  /* rodape */
-  .rodape {
-    height: 100%;
-  }
-
-  .link-footer {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  /* sobre */
-  .initial.curriculo {
-    min-height: 80vh;
-    display: flex;
-  }
-  .sobre {
-    padding: 10px 30px;
-  }
-  .curriculo h1 {
-    font-size: 20pt;
-  }
-
-  .interface {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .initnav .logo span {
-    font-size: 50px;
-  }
-  header {
-    height: 80px;
+  nav {
+    min-width: 50rem
   }
 
 }
 
-
-
-@media (max-width: 1390px) {
-  .initial.projetos h1 {
-    font-size: 10pt;
+@media (min-width: 930px) {
+  .menu-icon {
+    display: none;
   }
-  .initial .direito article h1 {
-    font-size: 45pt;
-    color: #0ec563;
-  }
+  
 
-  .initial .esquerdo img {
-    width: 25vh;
+}
+@media (max-width: 930px) {
+  .initial.home {
+    
+    flex-direction: column;
     
   }
 
-  .sobre.initial {
-
-    padding: 10px 110px;
-  }
-  
-}
-
-@media (min-width: 900px) {
-  .menu-icon,
-  .sidebar,
-  .close-btn {
+  .NavEnd ul li{
     display: none;
   }
-}
-@media (max-width: 950px) {
-  .initial .direito article h1 {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    height: 100px;
+  }
+  .esquerdo img {
+    width: 250px;
+  }
+  .direito article h1 {
     font-size: 35pt;
   }
-  .initial .direito article h2 {
-    font-size: 25pt;
+  br {
+    display: none;
   }
-
-  .initial .esquerdo img {
-    width: 35vh;
+  .direito article h2 {
+    font-size: 20pt;
   }
-  .botao {
-    height: 40px;
-  }
-
-  /* artigos */
-
-  .initial.artigos {
-    padding: 20px 0px;
-
   }
   
-.section_art {
-  padding: 50px 50px;
-}
-  .card-galery {
-    width: 100%;
-  
-}
 
-@media (max-width: 650px) {
-  .sobre.initial {
-    padding: 10px 35px;
+  @media (max-width: 500px) {
+    .esquerdo img {
+      width: 200px;
+    }
+    .direito article h1{
+      padding-top: 20px;
+      font-size: 23pt;
+    }
+    .direito article h2 {
+      font-size: 15pt;
+    }
   }
-  
-  }
-
-}

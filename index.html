@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <link rel="stylesheet" href="css/responsity.css"> -->
+    <link rel="stylesheet" href="css/responsity.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,9 +31,8 @@
             </div>
             <div class="NavEnd">
                 <ul>
-                    <li> <a href="index.html">inicio</a></li>
-                    <li> <a href="#txt">projetos</a></li>
-                    <li> <a href="#txt_art">artigos</a></li>
+                    <li> <a href="#pjts">projetos</a></li>
+                    <li> <a href="#artgs">artigos</a></li>
                     <li><a href="#developer"> contacte-me</a></li>
                 </ul>
                 <div class="menu-icon" onclick="toggleSidebar()">☰</div>
@@ -44,7 +43,7 @@
                         <i class="bi bi-person-badge-fill"></i>
                         <span>Sobre mim</span>
                     </a>
-                    <a href="#txt">
+                    <a href="#pjts">
                         <i class="bi bi-folder-fill"></i>
                         <span>projetos</span>
                     </a>
@@ -69,7 +68,7 @@
             </section>
             <section class="direito">
                 <article>
-                    <h1> Eaí?<br>Meu nome é <span class="effect">Drey!</span>
+                    <h1> Eaí?<br> Meu nome é <span class="effect">Drey!</span>
                     </h1>
                     <h2>Eu sou Dev Front-End!</h2>
                     <section class="botao" id="center">
@@ -79,9 +78,9 @@
                 </article>
             </section>
         </div>
-        <div class="initial projetos">
+        <div class="initial projetos" id="pjts">
             <section>
-                    <h1 id="center">/projetos</h1>
+                <h1 id="center" class="title">/projetos</h1>
                 <div class="cards">
                     <!-- Card 1 -->
                     <a target="_blank" href="/pages/acessivecop.html" class="box">
@@ -124,8 +123,8 @@
             </section>
         </div>
         <div class="initial artigos">
-            <section>
-                <h1 id="center">/artigos</h1>
+            <section id="artgs">
+                <h1 id="center" class="title">/artigos</h1>
                 <div class="section_art">
                     <div class="box_artigos">
                         <div class="card1">
@@ -172,42 +171,39 @@
         </div>
     </main>
     <footer>
-        <div class="rodape">
-            <!-- linha com os links esquerdo e direito -->
-            <div class="link-footer">
-                <div class="esquerdo">
-                    <a href="/pages/sobre.html">curriculo</a>
-                    <a href="#txt">projetos</a>
-                </div>
-                <div class="direito">
-                    <a href="#txt_art">artigos</a>
-                    <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
-                </div>
-            </div>
+        <section>
 
-            <!-- redes sociais -->
-            <div class="icons">
-                <a href="https://www.instagram.com/dreydev/" target="_blank">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/andrey-rocha-790b6b1a0/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://github.com/dreyrocha" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href="mailto:andrey.rocha200413@gmail.com" target="_blank">
-                    <i class="bi bi-envelope"></i>
-                </a>
-            </div>
+        
+        <a href="/pages/sobre.html">curriculo</a>
+        <a href="/index.html#pjts">projetos</a>
+
+
+        <a href="/pages/artigos.html">artigos</a>
+        <a href="https://lattes.cnpq.br/7665405767353886" target="_blank">lattes</a>
+    </section>
+    <section>
+        <a href="https://www.instagram.com/dreydev/" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andrey-rocha-790b6b1a0/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/dreyrocha" target="_blank">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:andrey.rocha200413@gmail.com" target="_blank">
+            <i class="bi bi-envelope"></i>
+        </a>
+        
+    </section>
+
+        <!-- Desenvolvedor e UI Designer -->
+        <div id="developer">
+            <h1>
+                © 2025 Drey. Todos os direitos reservados
+            </h1>
         </div>
     </footer>
-    <!-- Desenvolvedor e UI Designer -->
-    <div id="developer">
-        <h1>
-            © 2025 Drey. Todos os direitos reservados
-        </h1>
-    </div>
 
     <script src="js/javascript.js"></script>
 

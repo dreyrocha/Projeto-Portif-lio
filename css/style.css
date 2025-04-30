@@ -9,7 +9,7 @@ body {
   height: 100%;
   overflow-x: clip;
   background-color: #0b150e;
-  font-family: 'poppins';
+  font-family: "poppins";
 }
 
 /* header/cabeçalho */
@@ -47,18 +47,19 @@ nav {
   justify-content: space-around;
 }
 
-
-
 /* classe fixa */
 
-
+.title {
+  margin-bottom: 35px;
+  font-size: 20pt;
+}
 /* fontes padrões */
 h1 {
   color: #0ec563;
   font-family: "gobold", sans-serif;
 }
 h2 {
-  color:#8caca1;
+  color: #8caca1;
   font-family: "poppins", sans-serif;
 }
 
@@ -66,8 +67,9 @@ p {
   font-family: "poppins", sans-serif;
   color: #8caca1;
   font-weight: 300;
+  margin-bottom: 10px ;
+  
 }
-
 
 /* botao */
 .ver_mais {
@@ -78,11 +80,7 @@ p {
   cursor: pointer;
   font-size: 15pt;
   height: 99%;
-
 }
-
-
-
 
 .ver_mais:hover {
   background-color: #055a2d;
@@ -92,7 +90,6 @@ p {
 .ver_mais {
   color: #c8d8d3;
 }
-
 
 .botao {
   height: 50px;
@@ -109,7 +106,6 @@ p {
 /* mains */
 
 .initnav {
-
   height: 80px;
   display: flex;
   align-items: center;
@@ -125,7 +121,7 @@ p {
 }
 
 .initnav .logo a {
-  font-family: "Gobold" ;
+  font-family: "Gobold";
   text-decoration: none;
   color: #0ec563;
 }
@@ -150,13 +146,12 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: #0ec563;
-  font-family: 'gobold', 'poppins', Arial;
+  font-family: "gobold", "poppins", Arial;
 }
 
 a:hover {
   color: #055a2d;
 }
-
 
 .effect {
   transition: transform 0.2s ease-in-out;
@@ -191,15 +186,12 @@ a:hover {
   align-items: center;
 }
 
-
 .direito article h1 {
   font-size: 50pt;
- 
 }
 
 .direito article h2 {
   font-size: 30pt;
-  
 }
 
 .resumo {
@@ -210,7 +202,7 @@ a:hover {
   margin: 20px 0px;
 }
 .page_curriculo {
-  border: solid 2px  #8caca1 ;
+  border: solid 2px #8caca1;
   border-style: dashed;
   width: 100%;
   padding: 20px 20px;
@@ -304,8 +296,8 @@ main h2 {
 
 main ul {
   padding: 0px 20px;
- color: #8caca1;
- margin: 0px 0px 30px 0px;
+  color: #8caca1;
+  margin: 0px 0px 30px 0px;
 }
 
 main h3 {
@@ -320,36 +312,29 @@ main h1 {
 /* footer */
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: #c8d8d3;
-  color: #175338;
-  padding: 20px 0;
+  background-color: #8caca1;
 }
 
-.rodape {
+footer section {
+  height: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 0px 100px;
-  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1200px;
-}
-
-.link-footer {
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   width: 100%;
-  padding: 0 40px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 footer a {
-  font-family: "poppins", Arial;
-  font-weight: 600;
+  font-weight: 400;
   color: #055a2d;
   text-decoration: none;
   transition: ease-in-out 0.5s;
+  font-family: "poppins";
 }
 
 footer a:hover {
@@ -357,15 +342,8 @@ footer a:hover {
   transform: scale(1.2);
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.icons i {
+footer i {
   font-size: 30px;
-  color: #055a2d;
 }
 
 .icons i:hover {
@@ -377,13 +355,12 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c8d8d3;
-  height: 50px;
+  height: 30px;
 }
 
 #developer h1 {
   font-family: "poppins", Arial;
-  font-size: 10pt;
+  font-size: 7pt;
   color: #055a2d;
 }
 
@@ -401,9 +378,6 @@ section {
   margin: 10px;
 }
 
-
-
-
 .menu-icon {
   font-size: 2.2rem;
   cursor: pointer;
@@ -418,7 +392,6 @@ section {
   transform: scale(1.3);
   transition: 0.3s ease-in-out;
 }
-
 
 i {
   margin: 0px 10px;
@@ -475,7 +448,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px ;
+  border: solid 1px;
   color: #101613;
   text-decoration: none;
   font-size: 1.2rem;
@@ -498,19 +471,15 @@ i {
 
 /* Projetos-Individuais */
 
-
 .boxproject img {
   width: 100%;
   max-width: 400px;
   height: 70px;
   box-shadow: 0px 5px 10px -5px black;
   object-fit: cover;
-  margin: 10px 0
+  margin: 10px 0;
 }
 
-main .paragrafo {
-  padding: 0px 0px 15px 0px;
-}
 
 .boxproject .box-img {
   height: 200px;
@@ -520,4 +489,3 @@ main .paragrafo {
 .section_art {
   margin: 20px;
 }
-
