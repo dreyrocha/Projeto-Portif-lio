@@ -13,6 +13,11 @@
 @media (max-width: 930px) {
   .initial.home {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    min-height: 75vh;
+    padding-top: 70px;
   }
 
   .NavEnd ul li {
