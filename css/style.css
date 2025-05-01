@@ -80,15 +80,12 @@ p {
   cursor: pointer;
   font-size: 15pt;
   height: 99%;
+  color: #c8d8d3;
 }
 
 .ver_mais:hover {
   background-color: #055a2d;
   color: #0b150e;
-}
-
-.ver_mais {
-  color: #c8d8d3;
 }
 
 .botao {
@@ -486,6 +483,3 @@ i {
   border-radius: 0;
 }
 
-.section_art {
-  margin: 20px;
-}

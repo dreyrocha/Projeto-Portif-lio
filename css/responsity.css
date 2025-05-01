@@ -1,29 +1,21 @@
-
-
-
 @media (max-width: 1200px) {
   /* tamanho da imagem */
   nav {
-    min-width: 50rem
+    min-width: 50rem;
   }
-
 }
 
 @media (min-width: 930px) {
   .menu-icon {
     display: none;
   }
-  
-
 }
 @media (max-width: 930px) {
   .initial.home {
-    
     flex-direction: column;
-    
   }
 
-  .NavEnd ul li{
+  .NavEnd ul li {
     display: none;
   }
   nav {
@@ -46,18 +38,65 @@
   .direito article h2 {
     font-size: 20pt;
   }
+}
+
+@media (max-width: 500px) {
+  /* header */
+  .initnav .logo span {
+    font-size: 35px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .initial {
+    padding: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
-
-  @media (max-width: 500px) {
-    .esquerdo img {
-      width: 200px;
-    }
-    .direito article h1{
-      padding-top: 20px;
-      font-size: 23pt;
-    }
-    .direito article h2 {
-      font-size: 15pt;
-    }
+  section {
+    padding: 0px 10px;
   }
+
+  .esquerdo img {
+    width: 200px;
+  }
+  .direito article h1 {
+    padding-top: 20px;
+    font-size: 23pt;
+  }
+  .direito article h2 {
+    font-size: 15pt;
+  }
+  /* sobre */
+
+  .curriculo {
+    margin: 0;
+    padding: 0;
+  }
+  .page_curriculo {
+    padding: 10px;
+  }
+
+  .initial .curriculo h2 {
+    font-size: 9.5pt;
+  }
+  .initial .curriculo h3 {
+    font-size: 9.5pt;
+  }
+
+  .ver_mais {
+    font-size: 12pt;
+    width: 160px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+  }
+  .botao {
+    height: 40px;
+    margin: 30px 0px;
+  }
+}
