@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: clip;
+  background-color: #0b150e;
+  font-family: "poppins";
+}
+
+/* header/cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0px;
+}
+
+nav {
+  min-width: 73rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Iniciais gerais */
+.initial {
+  background-color: #0b150e;
+  color: #e0e0e0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+
+.initial.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* classe fixa */
+
+.title {
+  margin-bottom: 35px;
+  font-size: 20pt;
+}
+/* fontes padrões */
+h1 {
+  color: #0ec563;
+  font-family: "gobold", sans-serif;
+}
+h2 {
+  color: #8caca1;
+  font-family: "poppins", sans-serif;
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  color: #8caca1;
+  font-weight: 300;
+  margin-bottom: 10px ;
+  
+}
+
+/* botao */
+.ver_mais {
+  width: 250px;
+  background-color: #0ec563;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15pt;
+  height: 99%;
+  color: #c8d8d3;
+}
+
+.ver_mais:hover {
+  background-color: #055a2d;
+  color: #0b150e;
+}
+
+.botao {
+  height: 50px;
+  margin: 30px 0px;
+}
+
+/* centralizar itens */
+#center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* mains */
+
+.initnav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-family: "Gobold";
+}
+
+.initnav .logo {
+  width: 140px;
+  text-align: center;
+  justify-content: center;
+}
+
+.initnav .logo a {
+  font-family: "Gobold";
+  text-decoration: none;
+  color: #0ec563;
+}
+.initnav .logo span {
+  font-size: 70px;
+}
+
+.divisao {
+  background-color: #8caca1;
+  width: 1px;
+  height: 30px;
+}
+
+header .NavEnd ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header .NavEnd li,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0ec563;
+  font-family: "gobold", "poppins", Arial;
+}
+
+a:hover {
+  color: #055a2d;
+}
+
+.effect {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.effect:hover {
+  transform: rotate(8deg);
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Gobold";
+  src: url("../fonts/Gobold Uplow.otf") format("opentype");
+}
+
+/* main */
+.esquerdo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esquerdo img {
+  width: 50vh;
+}
+
+.direito {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.direito article h1 {
+  font-size: 50pt;
+}
+
+.direito article h2 {
+  font-size: 30pt;
+}
+
+.resumo {
+  margin: 20px 0px;
+}
+
+.curriculo {
+  margin: 20px 0px;
+}
+.page_curriculo {
+  border: solid 2px #8caca1;
+  border-style: dashed;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+/* projetos */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.box {
+  flex: 1 1 300px;
+  max-width: 95%;
+  height: auto;
+  border-radius: 20px;
+  /* padding: 1rem; */
+  box-sizing: border-box;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  border: solid 1px #0ec563;
+}
+
+.card-img {
+  width: 100%;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.card-footer {
+  padding: 10px;
+  background-color: #101613;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-footer h3 {
+  color: #e2f6e9;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Artigos */
+
+.card1 {
+  position: relative;
+  display: inline-block;
+  margin: 25px 0px;
+}
+
+/* efeito do card */
+
+.card1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #8caca1; /* cor da linha */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card1:hover::after {
+  transform: scaleX(1);
+}
+
+/* Espaçamento do Currículo */
+
+main h2 {
+  font-size: 15pt;
+}
+
+main ul {
+  padding: 0px 20px;
+  color: #8caca1;
+  margin: 0px 0px 30px 0px;
+}
+
+main h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+main h1 {
+  margin: 0px 0px 5px 0px;
+  font-size: 15pt;
+}
+
+/* footer */
+
+footer {
+  background-color: #8caca1;
+}
+
+footer section {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer a {
+  font-weight: 400;
+  color: #055a2d;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+  font-family: "poppins";
+}
+
+footer a:hover {
+  color: #043d1f;
+  transform: scale(1.2);
+}
+
+footer i {
+  font-size: 30px;
+}
+
+.icons i:hover {
+  color: #033c1f;
+}
+
+/* creditos developer */
+#developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+#developer h1 {
+  font-family: "poppins", Arial;
+  font-size: 7pt;
+  color: #055a2d;
+}
+
+/* page artigos */
+
+section {
+  padding: 0px 20px;
+}
+
+/* navlinks */
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  margin: 10px;
+}
+
+.menu-icon {
+  font-size: 2.2rem;
+  cursor: pointer;
+  position: fixed;
+  top: -5px;
+  left: 1rem;
+  z-index: 1001;
+  color: #0ec563;
+  padding: 5px 15px;
+}
+.menu-icon:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+i {
+  margin: 0px 10px;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: #0ec563;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #ff0000;
+  cursor: pointer;
+  background: transparent;
+  width: 36px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar i {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a {
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  color: #101613;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 5px 0;
+  transition: color 0.2s;
+  gap: 5px;
+}
+
+.sidebar span {
+  font-family: "poppins", arial;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #0ec563;
+  background-color: #0b150e;
+  transition: color 0.5s;
+}
+
+/* Projetos-Individuais */
+
+.boxproject img {
+  width: 100%;
+  max-width: 400px;
+  height: 70px;
+  box-shadow: 0px 5px 10px -5px black;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+
+.boxproject .box-img {
+  height: 200px;
+  border-radius: 0;
+}
